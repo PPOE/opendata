@@ -15,11 +15,12 @@ require_once 'MemberRepository.class.php';
 $app = new \Slim\Slim();
 
 $response = $app->response();
-$response['Content-Type'] = 'application/json';
+$response->header('Content-Type', 'application/json');
+$response->header('Access-Control-Allow-Origin', '*');
 
 $app->get('/', function() use($app) {
     $response = $app->response();
-    $response['Content-Type'] = 'text/html';
+    $response->header('Content-Type', 'text/html');
 
     $app->render('documentation.php');
 });
