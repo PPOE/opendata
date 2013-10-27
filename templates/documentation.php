@@ -23,14 +23,27 @@
             <h2 class="text-warning">Warning!</h2>
             <p class="text-warning">This API is under heavy development and therefor not stable!</p>
 
-            <h2>User Count</h2>
-            <p><a href="member/count/"><code>index.php/member/count/</code></a></p>
+            <h2>About</h2>
+            <p>
+                <a href="https://www.piratenpartei.at/rechtliches/impressum/">Impressum</a>,
+                License todo,
+                Author: <a href="https://twitter.com/PeterTheOne">PeterTheOne</a> aka.
+                <a href="http://petergrassberger.at">Peter Grassberger</a> (mail: <a href="mailto:petertheone@piratenpartei.at">petertheone@piratenpartei.at</a>)
+                <a href="https://github.com/PPOE/opendata">Sourcecode on Github</a>.
+            </p>
+            <p>
+                Other sources of Opendata of the Piratenpartei Österreichs are the
+                <a href="https://lfapi.piratenpartei.at/">Liquid API</a> (
+                <a href="http://dev.liquidfeedback.org/trac/lf/wiki/API">Documentation</a>) and the
+                <a href="http://s.piratenpartei.at/index.php?module=API&action=listAllAPI&idSite=6&period=day&date=yesterday">Piwik API</a>
+                of the Website.
+            </p>
+
+            <h2>Member Count</h2>
+            <p><a href="member/count/"><code>GET index.php/member/count/</code></a></p>
             <p>
                 Returns a list of member counts at certain days.
             </p>
-            <table class="table">
-                <tr><th>HTTP Method</th><td>GET</td></tr>
-            </table>
             <h3>Parameters</h3>
             <table class="table">
                 <tr><th>todo</th><td>todo</td></tr>
