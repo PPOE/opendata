@@ -33,7 +33,25 @@
             </table>
             <h3>Parameters</h3>
             <table class="table">
-                <tr><th>todo</th><td>todo</td></tr>
+                <tr>
+                    <th>stateOrganisation</th><td>number from 0 to 8</td>
+                    <td>
+                        Filter by state organisation:
+                        <ul>
+                            <li>0: Sum of all (default)</li>
+                            <li>1: Burgenland</li>
+                            <li>2: Carinthia</li>
+                            <li>3: Lower Austria</li>
+                            <li>4: Upper Austria</li>
+                            <li>5: Salzburg</li>
+                            <li>6: Styria</li>
+                            <li>7: Tyrol</li>
+                            <li>8: Vorarlberg</li>
+                            <li>9: Vienna</li>
+                            <li>10: No State (not yet implemented)</li>
+                        </ul>
+                    </td>
+                </tr>
             </table>
 
             <h3>Response</h3>

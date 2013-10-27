@@ -29,7 +29,15 @@ $app->get('/member/count/', function() use($app) {
     try {
         $userRepository = new MemberRepository();
 
-        $result = $userRepository->getMemberCount();
+        $startTime = $app->request->params('startTime');
+        $endTime = $app->request->params('endTime');
+        $stateOrganisation = $app->request->params('stateOrganisation');
+
+        if ($stateOrganisation !== null) {
+            $result = $userRepository->getMemberCountByStateOrganisation($stateOrganisation);
+        } else {
+            $result = $userRepository->getMemberCount();
+        }
         $app->response()->body(json_format($result));
     } catch (Exception $e) {
         $result = array(
