@@ -146,10 +146,10 @@ try {
         createNutsTable($pdo);
         writeMessage('nuts table created.');
     }
-    //if (!isThereAnEntryOfToday($pdo, STATS_DATABASE, NUTS_TABLE)) {
+    if (!isThereAnEntryOfToday($pdo, STATS_DATABASE, NUTS_TABLE)) {
         createNutsEntries($pdo);
         writeMessage('nuts entries created.');
-    //}
+    }
 
 } catch (Exception $exception) {
     writeMessage($exception->getMessage());
